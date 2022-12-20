@@ -1,14 +1,1 @@
-export const data = JSON.parse("{\"key\":\"v-56947d83\",\"path\":\"/database/Redis/Redis%E7%BA%BF%E7%A8%8B%E6%A8%A1%E5%9E%8B%E4%B8%8EIO%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8.html\",\"title\":\"线程模型与IO多路复用\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"线程模型与IO多路复用\",\"date\":\"2022-11-14T00:00:00.000Z\"},\"excerpt\":\"\",\"headers\":[{\"level\":2,\"title\":\"线程模型\",\"slug\":\"线程模型\",\"link\":\"#线程模型\",\"children\":[{\"level\":3,\"title\":\"Redis 是单线程还是多线程\",\"slug\":\"redis-是单线程还是多线程\",\"link\":\"#redis-是单线程还是多线程\",\"children\":[]},{\"level\":3,\"title\":\"Redis 是单线程\",\"slug\":\"redis-是单线程\",\"link\":\"#redis-是单线程\",\"children\":[]},{\"level\":3,\"title\":\"Redis 引入多线的心路历程\",\"slug\":\"redis-引入多线的心路历程\",\"link\":\"#redis-引入多线的心路历程\",\"children\":[]}]},{\"level\":2,\"title\":\"IO多路复用模型\",\"slug\":\"io多路复用模型\",\"link\":\"#io多路复用模型\",\"children\":[{\"level\":3,\"title\":\"基本介绍\",\"slug\":\"基本介绍\",\"link\":\"#基本介绍\",\"children\":[]},{\"level\":3,\"title\":\"Unix网络编程中的五种IO模型\",\"slug\":\"unix网络编程中的五种io模型\",\"link\":\"#unix网络编程中的五种io模型\",\"children\":[]},{\"level\":3,\"title\":\"Redis中的IO多路复用\",\"slug\":\"redis中的io多路复用\",\"link\":\"#redis中的io多路复用\",\"children\":[]}]}],\"readingTime\":{\"minutes\":17.11,\"words\":5133},\"filePathRelative\":\"database/Redis/Redis线程模型与IO多路复用.md\",\"localizedDate\":\"2022年11月14日\"}")
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}
+export const data = JSON.parse("{\"key\":\"v-56947d83\",\"path\":\"/database/Redis/Redis%E7%BA%BF%E7%A8%8B%E6%A8%A1%E5%9E%8B%E4%B8%8EIO%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8.html\",\"title\":\"线程模型与IO多路复用\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"线程模型与IO多路复用\",\"date\":\"2022-11-14T00:00:00.000Z\"},\"excerpt\":\"\",\"headers\":[{\"level\":2,\"title\":\"线程模型\",\"slug\":\"线程模型\",\"link\":\"#线程模型\",\"children\":[{\"level\":3,\"title\":\"Redis 是单线程还是多线程\",\"slug\":\"redis-是单线程还是多线程\",\"link\":\"#redis-是单线程还是多线程\",\"children\":[]},{\"level\":3,\"title\":\"Redis 是单线程\",\"slug\":\"redis-是单线程\",\"link\":\"#redis-是单线程\",\"children\":[]},{\"level\":3,\"title\":\"Redis 引入多线的心路历程\",\"slug\":\"redis-引入多线的心路历程\",\"link\":\"#redis-引入多线的心路历程\",\"children\":[]}]},{\"level\":2,\"title\":\"IO多路复用模型\",\"slug\":\"io多路复用模型\",\"link\":\"#io多路复用模型\",\"children\":[{\"level\":3,\"title\":\"基本介绍\",\"slug\":\"基本介绍\",\"link\":\"#基本介绍\",\"children\":[]},{\"level\":3,\"title\":\"Unix网络编程中的五种IO模型\",\"slug\":\"unix网络编程中的五种io模型\",\"link\":\"#unix网络编程中的五种io模型\",\"children\":[]},{\"level\":3,\"title\":\"Redis中的IO多路复用\",\"slug\":\"redis中的io多路复用\",\"link\":\"#redis中的io多路复用\",\"children\":[]}]}],\"git\":{\"createdTime\":1671528206000,\"updatedTime\":1671528206000,\"contributors\":[{\"name\":\"cjy\",\"email\":\"1614134577@qq.com\",\"commits\":1}]},\"readingTime\":{\"minutes\":17.1,\"words\":5130},\"filePathRelative\":\"database/Redis/Redis线程模型与IO多路复用.md\",\"localizedDate\":\"2022年11月14日\"}")

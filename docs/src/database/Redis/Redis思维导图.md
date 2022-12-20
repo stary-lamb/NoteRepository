@@ -1,5 +1,5 @@
 ---
-title: Redis前言
+title: Redis 前言
 date: 2022-11-14
 ---
 

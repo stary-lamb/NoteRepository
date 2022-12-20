@@ -67,7 +67,7 @@
 <li>用户进程处理相关数据，并解除阻塞状态，重新运行。</li>
 </ol>
 <h4 id="非阻塞io" tabindex="-1"><a class="header-anchor" href="#非阻塞io" aria-hidden="true">#</a> 非阻塞IO</h4>
-<img src="C:\Users\Mr.chen\AppData\Roaming\Typora\typora-user-images\image-20221211143108259.png" alt="image-20221211143108259" style="zoom:67%;" />
+<img src="https://qijiayi-image.oss-cn-shenzhen.aliyuncs.com/img/image-20221220174206987.png" alt="image-20221220174206987" style="zoom:67%;" />
 <ol>
 <li>用户进程调用 revcfrom 系统调用请求内核是否有新的网络数据。</li>
 <li>如果没有数据，内核直接返回没有数据，用户进程不再阻塞。</li>

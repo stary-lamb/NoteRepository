@@ -1,14 +1,1 @@
-export const data = JSON.parse("{\"key\":\"v-7e3ee14c\",\"path\":\"/database/Redis/Redis%E7%BC%93%E5%AD%98%E5%8F%8C%E5%86%99%E4%B8%80%E8%87%B4%E6%80%A7.html\",\"title\":\"Redis 缓存双写一致性\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Redis 缓存双写一致性\",\"date\":\"2022-12-0\"},\"excerpt\":\"\",\"headers\":[{\"level\":2,\"title\":\"缓存双写一致性\",\"slug\":\"缓存双写一致性\",\"link\":\"#缓存双写一致性\",\"children\":[]},{\"level\":2,\"title\":\"先更新数据库，再更新缓存\",\"slug\":\"先更新数据库-再更新缓存\",\"link\":\"#先更新数据库-再更新缓存\",\"children\":[]},{\"level\":2,\"title\":\"先删除缓存，再更新数据库\",\"slug\":\"先删除缓存-再更新数据库\",\"link\":\"#先删除缓存-再更新数据库\",\"children\":[]},{\"level\":2,\"title\":\"先更新数据库，在删除缓存\",\"slug\":\"先更新数据库-在删除缓存\",\"link\":\"#先更新数据库-在删除缓存\",\"children\":[{\"level\":3,\"title\":\"解决方案\",\"slug\":\"解决方案\",\"link\":\"#解决方案\",\"children\":[]}]},{\"level\":2,\"title\":\"先删缓存，再更新数据库 与 先更新数据库，再删缓存 选择\",\"slug\":\"先删缓存-再更新数据库-与-先更新数据库-再删缓存-选择\",\"link\":\"#先删缓存-再更新数据库-与-先更新数据库-再删缓存-选择\",\"children\":[]},{\"level\":2,\"title\":\"小结\",\"slug\":\"小结-1\",\"link\":\"#小结-1\",\"children\":[]}],\"readingTime\":{\"minutes\":7.74,\"words\":2321},\"filePathRelative\":\"database/Redis/Redis缓存双写一致性.md\",\"localizedDate\":\"2022年11月30日\"}")
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}
+export const data = JSON.parse("{\"key\":\"v-7e3ee14c\",\"path\":\"/database/Redis/Redis%E7%BC%93%E5%AD%98%E5%8F%8C%E5%86%99%E4%B8%80%E8%87%B4%E6%80%A7.html\",\"title\":\"Redis 缓存双写一致性\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Redis 缓存双写一致性\",\"date\":\"2022-12-0\"},\"excerpt\":\"\",\"headers\":[{\"level\":2,\"title\":\"缓存双写一致性\",\"slug\":\"缓存双写一致性\",\"link\":\"#缓存双写一致性\",\"children\":[]},{\"level\":2,\"title\":\"先更新数据库，再更新缓存\",\"slug\":\"先更新数据库-再更新缓存\",\"link\":\"#先更新数据库-再更新缓存\",\"children\":[]},{\"level\":2,\"title\":\"先删除缓存，再更新数据库\",\"slug\":\"先删除缓存-再更新数据库\",\"link\":\"#先删除缓存-再更新数据库\",\"children\":[]},{\"level\":2,\"title\":\"先更新数据库，在删除缓存\",\"slug\":\"先更新数据库-在删除缓存\",\"link\":\"#先更新数据库-在删除缓存\",\"children\":[{\"level\":3,\"title\":\"解决方案\",\"slug\":\"解决方案\",\"link\":\"#解决方案\",\"children\":[]}]},{\"level\":2,\"title\":\"先删缓存，再更新数据库 与 先更新数据库，再删缓存 选择\",\"slug\":\"先删缓存-再更新数据库-与-先更新数据库-再删缓存-选择\",\"link\":\"#先删缓存-再更新数据库-与-先更新数据库-再删缓存-选择\",\"children\":[]},{\"level\":2,\"title\":\"小结\",\"slug\":\"小结-1\",\"link\":\"#小结-1\",\"children\":[]}],\"git\":{\"createdTime\":1671528206000,\"updatedTime\":1671528206000,\"contributors\":[{\"name\":\"cjy\",\"email\":\"1614134577@qq.com\",\"commits\":1}]},\"readingTime\":{\"minutes\":7.74,\"words\":2321},\"filePathRelative\":\"database/Redis/Redis缓存双写一致性.md\",\"localizedDate\":\"2022年11月30日\"}")

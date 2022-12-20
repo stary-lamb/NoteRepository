@@ -100,7 +100,7 @@ I/O：网络 I/O
 
 #### 非阻塞IO
 
-<img src="C:\Users\Mr.chen\AppData\Roaming\Typora\typora-user-images\image-20221211143108259.png" alt="image-20221211143108259" style="zoom:67%;" />
+<img src="https://qijiayi-image.oss-cn-shenzhen.aliyuncs.com/img/image-20221220174206987.png" alt="image-20221220174206987" style="zoom:67%;" />
 
 1. 用户进程调用 revcfrom 系统调用请求内核是否有新的网络数据。
 2. 如果没有数据，内核直接返回没有数据，用户进程不再阻塞。

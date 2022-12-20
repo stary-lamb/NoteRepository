@@ -17,5 +17,5 @@ date: 2022-11-14
 
 ## 正在更新部分
 
-- Redis
-- docker
+- JUC
+- JVM

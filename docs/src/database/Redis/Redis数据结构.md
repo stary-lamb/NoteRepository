@@ -386,7 +386,7 @@ unsigned char *ziplistNew(void) {
     return zl;
 ~~~
 
-<img src="C:\Users\Mr.chen\AppData\Roaming\Typora\typora-user-images\image-20221207211023176.png" alt="image-20221207211023176" style="zoom: 67%;" />
+<img src="https://qijiayi-image.oss-cn-shenzhen.aliyuncs.com/img/image-20221220173537845.png" alt="image-20221220173537845" style="zoom:67%;" />
 
 **ziplist 节点**
 
