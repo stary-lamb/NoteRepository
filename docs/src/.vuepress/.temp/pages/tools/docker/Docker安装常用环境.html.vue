@@ -1,5 +1,4 @@
-<template><div><h1 id="docker-安装常用环境" tabindex="-1"><a class="header-anchor" href="#docker-安装常用环境" aria-hidden="true">#</a> Docker 安装常用环境</h1>
-<h2 id="docker-安装-mysql-8-0" tabindex="-1"><a class="header-anchor" href="#docker-安装-mysql-8-0" aria-hidden="true">#</a> Docker 安装 MySQL 8.0</h2>
+<template><div><h2 id="docker-安装-mysql-8-0" tabindex="-1"><a class="header-anchor" href="#docker-安装-mysql-8-0" aria-hidden="true">#</a> Docker 安装 MySQL 8.0</h2>
 <p><strong>1. 拉取镜像</strong></p>
 <div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code><span class="token function">docker</span> pull mysql:5.7
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><strong>2. 启动 mysql</strong></p>

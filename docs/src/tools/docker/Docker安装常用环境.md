@@ -1,10 +1,8 @@
 ---
-author: 柒加壹
+title: Docker 安装常用环境
 
 date: 2022-11-14
 ---
-
-# Docker 安装常用环境
 
 ## Docker 安装 MySQL 8.0
 

@@ -126,20 +126,14 @@ export const sidebarConfig = sidebar({
     },
     {
       text: "数据库",
-      icon: "database",
+      icon: "odbc",
       prefix: "database/",
       collapsible: true,
       children: [
         {
-          text: "基础",
-          icon: "basic",
-          collapsible: true,
-          children: ["basis", "character-set"],
-        },
-        {
           text: "MySQL",
           prefix: "mysql/",
-          icon: "mysql",
+          icon: "MySQL",
           collapsible: true,
           children: [
             "mysql-questions-01",
@@ -163,24 +157,22 @@ export const sidebarConfig = sidebar({
         {
           text: "Redis",
           prefix: "redis/",
-          icon: "redis",
+          icon: "Redis",
           collapsible: true,
           children: [
-            "cache-basics",
-            "redis-questions-01",
-            "redis-questions-02",
-            {
-              text: "重要知识点",
-              icon: "star",
-              collapsible: true,
-              children: [
-                "3-commonly-used-cache-read-and-write-strategies",
-                "redis-data-structures-01",
-                "redis-data-structures-02",
-                "redis-memory-fragmentation",
-                "redis-cluster",
-              ],
-            },
+            "Redis思维导图",
+            "Redis线程模型与IO多路复用",
+            "Redis数据结构",
+            "Redis基本数据类型及使用场景",
+            "Redis布隆过滤器",
+            "Redis缓存雪崩、缓存穿透、缓存击穿",
+            "Redis分布式锁",
+            "Redis键过期与淘汰",
+            "Redis缓存双写一致性",
+            "RedisAOF和RDB",
+            "Redis三大集群模式",
+            "Redis最佳实践",
+            "多级缓存"
           ],
         },
       ],

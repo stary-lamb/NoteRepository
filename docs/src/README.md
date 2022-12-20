@@ -2,13 +2,13 @@
 
 home: true
 icon: home
-title: 首页
+title: 种植基地
 heroImage: /logo.png
-heroText: 柒加壹笔记
-tagline: 记录学习 Java 的每一步；要么卷走别人，要么卷死自己！
+heroText: 小柒种植基地
+tagline: 立志成为新时代优秀的 🧑‍🌾，记录每天的耕种日记
 actions:
 
-- text: 卷起来 🚀
+- text: 进入基地
   link: '/home'
   type: secondary
 
@@ -45,4 +45,5 @@ features:
   link: '/home'
 
 copyright: false
-footer: MIT Licensed | Copyright © 2019-present Mr.Hope
+
+# footer:

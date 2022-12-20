@@ -17,13 +17,20 @@ export default hopeTheme({
 
   docsDir: "docs",
 
-  pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
+  pageInfo: [
+    "Author",
+    "Category",
+    "Tag",
+    "Date",
+    "Original",
+    "Word",
+    "ReadingTime",
+  ],
 
   navbar: navbarConfig,
 
   sidebar: sidebarConfig,
-  footer:
-  '1111',
+  footer:'',
   displayFooter: true,
   plugins: {
     // Disable features you don’t want here

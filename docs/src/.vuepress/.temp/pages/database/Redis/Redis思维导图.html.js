@@ -1,0 +1,14 @@
+export const data = JSON.parse("{\"key\":\"v-6204ddcf\",\"path\":\"/database/Redis/Redis%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE.html\",\"title\":\"Redis前言\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Redis前言\",\"date\":\"2022-11-14T00:00:00.000Z\"},\"excerpt\":\"\",\"headers\":[{\"level\":2,\"title\":\"Redis 思维导图\",\"slug\":\"redis-思维导图\",\"link\":\"#redis-思维导图\",\"children\":[]},{\"level\":2,\"title\":\"笔记部分内容出处\",\"slug\":\"笔记部分内容出处\",\"link\":\"#笔记部分内容出处\",\"children\":[]}],\"readingTime\":{\"minutes\":0.33,\"words\":98},\"filePathRelative\":\"database/Redis/Redis思维导图.md\",\"localizedDate\":\"2022年11月14日\"}")
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

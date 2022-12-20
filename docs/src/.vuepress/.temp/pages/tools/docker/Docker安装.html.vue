@@ -1,5 +1,4 @@
-<template><div><h1 id="docker-安装教程" tabindex="-1"><a class="header-anchor" href="#docker-安装教程" aria-hidden="true">#</a> Docker 安装教程</h1>
-<h2 id="一、安装前置步骤" tabindex="-1"><a class="header-anchor" href="#一、安装前置步骤" aria-hidden="true">#</a> 一、安装前置步骤</h2>
+<template><div><h2 id="一、安装前置步骤" tabindex="-1"><a class="header-anchor" href="#一、安装前置步骤" aria-hidden="true">#</a> 一、安装前置步骤</h2>
 <p>在安装 Docker 之前，先说一下配置，我这里是 Centos7 Linux 内核：官方建议 3.10 以上，3.8 以上貌似也可。</p>
 <p>注意：本文的命令使用的是 root 用户登录执行，不是 root 的话所有命令前面要加 <code v-pre>sudo</code></p>
 <p><strong>1.查看当前的内核版本</strong></p>

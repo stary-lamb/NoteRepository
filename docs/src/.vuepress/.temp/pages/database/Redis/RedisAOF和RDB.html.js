@@ -1,0 +1,14 @@
+export const data = JSON.parse("{\"key\":\"v-94aad1b8\",\"path\":\"/database/Redis/RedisAOF%E5%92%8CRDB.html\",\"title\":\"AOF 和 RDB\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"AOF 和 RDB\",\"date\":\"2022-12-12T00:00:00.000Z\"},\"excerpt\":\"\",\"headers\":[{\"level\":2,\"title\":\"RDB\",\"slug\":\"rdb\",\"link\":\"#rdb\",\"children\":[{\"level\":3,\"title\":\"执行时机\",\"slug\":\"执行时机\",\"link\":\"#执行时机\",\"children\":[]},{\"level\":3,\"title\":\"RDB 触发条件的底层原理\",\"slug\":\"rdb-触发条件的底层原理\",\"link\":\"#rdb-触发条件的底层原理\",\"children\":[]},{\"level\":3,\"title\":\"RDB原理\",\"slug\":\"rdb原理\",\"link\":\"#rdb原理\",\"children\":[]}]},{\"level\":2,\"title\":\"AOF\",\"slug\":\"aof\",\"link\":\"#aof\",\"children\":[{\"level\":3,\"title\":\"AOF 持久化的实现\",\"slug\":\"aof-持久化的实现\",\"link\":\"#aof-持久化的实现\",\"children\":[]},{\"level\":3,\"title\":\"AOF 文件的载入和还原\",\"slug\":\"aof-文件的载入和还原\",\"link\":\"#aof-文件的载入和还原\",\"children\":[]},{\"level\":3,\"title\":\"AOF 重写\",\"slug\":\"aof-重写\",\"link\":\"#aof-重写\",\"children\":[]}]},{\"level\":2,\"title\":\"混合持久化\",\"slug\":\"混合持久化\",\"link\":\"#混合持久化\",\"children\":[]},{\"level\":2,\"title\":\"持久化最佳实践\",\"slug\":\"持久化最佳实践\",\"link\":\"#持久化最佳实践\",\"children\":[]}],\"readingTime\":{\"minutes\":10.81,\"words\":3242},\"filePathRelative\":\"database/Redis/RedisAOF和RDB.md\",\"localizedDate\":\"2022年12月12日\"}")
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

@@ -1,10 +1,7 @@
 ---
-author: 柒加壹
-
+title: Docker 安装教程
 date: 2022-11-14
 ---
-
-# Docker 安装教程
 
 ## 一、安装前置步骤
 
@@ -99,3 +96,8 @@ sudo usermod -aG docker $USER
 yum remove docker-ce docker-ce-cli containerd.io
 rm -rf /var/lib/docker
 ```
+
+
+
+
+
