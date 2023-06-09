@@ -1,10 +1,9 @@
 ---
-title: 抽奖子系统
+title: 抽奖系统
 date: 2023-06-09
 ---
-
-
-
+## 系统出处
+[小傅哥知识星球](https://www.bugstack.cn/md/project/lottery/introduce/Lottery%E6%8A%BD%E5%A5%96%E7%B3%BB%E7%BB%9F.html)
 ## DDD架构
 
 ### DDD架构图
