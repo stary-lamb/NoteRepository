@@ -86,22 +86,19 @@ export const sidebarConfig = sidebar({
                 //     },
                 //   ],
                 // },
-                // {
-                //   text: "JVM",
-                //   prefix: "jvm/",
-                //   icon: "virtual_machine",
-                //   collapsible: true,
-                //   children: [
-                //     "memory-area",
-                //     "jvm-garbage-collection",
-                //     "class-file-structure",
-                //     "class-loading-process",
-                //     "classloader",
-                //     "jvm-parameters-intro",
-                //     "jvm-intro",
-                //     "jdk-monitoring-and-troubleshooting-tools",
-                //   ],
-                // },
+                {
+                    text: "JVM",
+                    prefix: "jvm/",
+                    icon: "jvm",
+                    collapsible: true,
+                    children: [
+                        "类加载子系统",
+                        "运行时内存",
+                        "垃圾回收",
+                        "执行引擎",
+                        "对象内存布局"
+                    ],
+                },
                 // {
                 //   text: "新特性",
                 //   prefix: "new-features/",
