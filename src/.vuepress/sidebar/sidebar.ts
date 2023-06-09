@@ -1,7 +1,8 @@
 import {sidebar} from "vuepress-theme-hope";
+import { project } from "./project.js";
 
-
-export const sidebarConfig = sidebar({
+export default sidebar({
+    "/project": project,
     // 必须放在最后面
     "/": [
         {

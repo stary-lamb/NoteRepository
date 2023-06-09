@@ -1,6 +1,6 @@
 import { hopeTheme } from "vuepress-theme-hope";
 import { navbarConfig } from "./navbar.js";
-import { sidebarConfig } from "./sidebar";
+import sidebar from "./sidebar/sidebar";
 
 export default hopeTheme({
   // hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
@@ -9,7 +9,7 @@ export default hopeTheme({
     name: "柒加壹",
   },
 
-  iconAssets: "//at.alicdn.com/t/c/font_3372836_v9za6cujpzd.css",
+  iconAssets: "//at.alicdn.com/t/c/font_3372836_s4petv7z3c.css",
 
   logo: "/logo.png",
 
@@ -29,7 +29,7 @@ export default hopeTheme({
 
   navbar: navbarConfig,
 
-  sidebar: sidebarConfig,
+  sidebar: sidebar,
   footer:'',
   displayFooter: true,
   plugins: {
