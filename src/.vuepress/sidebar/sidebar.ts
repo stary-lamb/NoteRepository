@@ -99,26 +99,15 @@ export default sidebar({
                         "对象内存布局"
                     ],
                 },
-                // {
-                //   text: "新特性",
-                //   prefix: "new-features/",
-                //   icon: "featured",
-                //   collapsible: true,
-                //   children: [
-                //     "java8-common-new-features",
-                //     "java8-tutorial-translate",
-                //     "java9",
-                //     "java10",
-                //     "java11",
-                //     "java12-13",
-                //     "java14",
-                //     "java15",
-                //     "java16",
-                //     "java17",
-                //     "java18",
-                //     "java19",
-                //   ],
-                // },
+                {
+                  text: "新特性",
+                  prefix: "new",
+                  icon: "new",
+                  collapsible: true,
+                  children: [
+                    "函数式编程",
+                  ],
+                },
             ],
         },
         {
