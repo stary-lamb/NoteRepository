@@ -147,6 +147,20 @@ export default sidebar({
             ],
         },
         {
+            text: "消息队列",
+            icon: "MQ",
+            prefix: "mq/",
+            collapsible: true,
+            children: [
+                {
+                    text: "RabbitMQ",
+                    link: "RabbitMQ",
+                    icon: "rabbitmq",
+                },
+
+            ],
+        },
+        {
             text: "开发工具",
             icon: "kaifagongju",
             prefix: "tools/",
