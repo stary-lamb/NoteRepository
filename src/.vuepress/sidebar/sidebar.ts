@@ -1,5 +1,5 @@
 import {sidebar} from "vuepress-theme-hope";
-import { project } from "./project.js";
+import {project} from "./project.js";
 
 export default sidebar({
     "/project": project,
@@ -62,31 +62,30 @@ export default sidebar({
                 //   icon: "code",
                 //   children: ["io-basis", "io-design-patterns", "io-model"],
                 // },
-                // {
-                //   text: "并发编程",
-                //   prefix: "concurrent/",
-                //   icon: "et-performance",
-                //   children: [
-                //     "java-concurrent-questions-01",
-                //     "java-concurrent-questions-02",
-                //     "java-concurrent-questions-03",
-                //     {
-                //       text: "重要知识点",
-                //       icon: "star",
-                //       collapsible: true,
-                //       children: [
-                //         "jmm",
-                //         "java-thread-pool-summary",
-                //         "java-thread-pool-best-practices",
-                //         "java-concurrent-collections",
-                //         "aqs",
-                //         "atomic-classes",
-                //         "threadlocal",
-                //         "completablefuture-intro",
-                //       ],
-                //     },
-                //   ],
-                // },
+                {
+                    text: "并发编程",
+                    prefix: "juc/",
+                    icon: "gaobingfa",
+                    collapsible: true,
+                    children: [
+                        "JUC思维导图",
+                        "多线程基础",
+                        "FutureTask & CompletableFuture",
+                        "Java内存模型-JMM",
+                        "volatile",
+                        "CAS",
+                        "原子操作类",
+                        "Threadlocal",
+                        "AQS",
+                        "线程中断与LockSupport",
+                        "Java锁",
+                        "Java对象内存布局和对象头",
+                        "Synchronized",
+                        "ReentrantLock",
+                        "ReentrantReadWriteLock",
+                        "StampedLock",
+                    ],
+                },
                 {
                     text: "JVM",
                     prefix: "jvm/",
