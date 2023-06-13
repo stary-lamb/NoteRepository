@@ -43,6 +43,11 @@ features:
   icon: blog
   details: 数据结构、算法
   link: '/home'
+  
+- title: 项目总结
+  icon: blog
+  details: 项目自我复盘与总结
+  link: '/project'
 
 copyright: false
 
