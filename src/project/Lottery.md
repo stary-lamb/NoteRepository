@@ -50,13 +50,13 @@ date: 2023-06-09
 
 - UserEntity 和 UserMapper 组成了数据访问层。
 - UserBo 和 UserService 组成了业务逻辑层。
-- UserVo 和 UserController 组成接口层。21
+- UserVo 和 UserController 组成接口层。
 
 我们可以发现，UserBo 是一个纯粹的数据结构，只包含数据，不包含任何业务逻辑。业务逻辑集中在 UserService 中。我们通过 UserService 来操作 UserBo。换句话说，Service 层的数据和业务逻辑，被分割为 BO 和 Service 两个类中。像 UserBo 这样，只包含数据，不包含业务逻辑的类，就叫作**贫血模型（Anemic Domain Model）**。同理，UserEntity、UserVo 都是基于贫血模型设计的。这种贫血模型将数据与操作分离，破坏了面向对象的封装特性，是一种典型的面向过程的编程风格。
 
 #### 充血模型
 
-贫血模型中，数据和业务逻辑被分割到不同的类中。**充血模型（Rich Domain Model）**正好相反，数据和对应的业务逻辑被封装到同一个类中。因此，这种充血模型满足面向对象的封装特性，是典型的面向对象编程风格。  
+贫血模型中，数据和业务逻辑被分割到不同的类中。`充血模型(Rich Domain Model)`正好相反，数据和对应的业务逻辑被封装到同一个类中。因此，这种充血模型满足面向对象的封装特性，是典型的面向对象编程风格。  
 
 ## 抽奖系统全流程
 
