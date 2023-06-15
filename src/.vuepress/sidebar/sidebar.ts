@@ -11,51 +11,19 @@ export default sidebar({
             collapsible: true,
             prefix: "java/",
             children: [
-                // {
-                //   text: "基础",
-                //   prefix: "basis/",
-                //   icon: "basic",
-                //   collapsible: true,
-                //   children: [
-                //     {
-                //       text: "重要知识点",
-                //       icon: "star",
-                //       collapsible: true,
-                //       children: [
-                //         "why-there-only-value-passing-in-java",
-                //         "serialization",
-                //         "generics-and-wildcards",
-                //         "reflection",
-                //         "proxy",
-                //         "bigdecimal",
-                //         "unsafe",
-                //         "spi",
-                //         "syntactic-sugar",
-                //       ],
-                //     },
-                //   ],
-                // },
-                // {
-                //   text: "集合",
-                //   prefix: "collection/",
-                //   icon: "container",
-                //   children: [
-                //     "java-collection-questions-01",
-                //     "java-collection-questions-02",
-                //     "java-collection-precautions-for-use",
-                //     {
-                //       text: "源码分析",
-                //       icon: "star",
-                //       collapsible: true,
-                //       children: [
-                //         "arraylist-source-code",
-                //         "hashmap-source-code",
-                //         "concurrent-hash-map-source-code",
-                //       ],
-                //     },
-                //   ],
-                // },
-
+                {
+                    text: "集合",
+                    prefix: "collection/",
+                    icon: "collection",
+                    collapsible: true,
+                    children: [
+                        "前言",
+                        "ArrayList源码解析",
+                        "LinkedList源码解析",
+                        "HashMap源码解析",
+                        "ConcurrentHashMap源码解析"
+                    ],
+                },
                 // {
                 //   text: "IO",
                 //   prefix: "io/",
@@ -100,13 +68,13 @@ export default sidebar({
                     ],
                 },
                 {
-                  text: "新特性",
-                  prefix: "new",
-                  icon: "new",
-                  collapsible: true,
-                  children: [
-                    "函数式编程",
-                  ],
+                    text: "新特性",
+                    prefix: "new",
+                    icon: "new",
+                    collapsible: true,
+                    children: [
+                        "函数式编程",
+                    ],
                 },
             ],
         },

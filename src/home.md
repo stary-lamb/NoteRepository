@@ -17,6 +17,5 @@ date: 2022-11-14
 
 ## 正在更新部分
 
-- Java集合源码
-- Spring源码
 - MySQL高级部分
+- Spring源码
