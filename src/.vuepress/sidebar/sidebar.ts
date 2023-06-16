@@ -84,13 +84,36 @@ export default sidebar({
             prefix: "database/",
             collapsible: true,
             children: [
-                // {
-                //   text: "MySQL",
-                //   prefix: "mysql/",
-                //   icon: "MySQL",
-                //   collapsible: true,
-                //   children: [],
-                // },
+                {
+                    text: "MySQL",
+                    prefix: "mysql/",
+                    icon: "MySQL",
+                    collapsible: true,
+                    children: [
+                        {
+                            text: "MySQL基础",
+                            prefix: "basic/",
+                            icon: "jichushuju",
+                            collapsible: true,
+                            children: [
+                                "MySQL基础操作",
+                                "MySQL增删改查",
+                                "MySQL数据类型",
+                                "运算符",
+                                "排序与分页",
+                                "多表查询",
+                                "子查询",
+                                "单行函数",
+                                "聚合函数",
+                                "约束",
+                                "视图",
+                                "存储过程",
+                                "触发器",
+                                "变量、流程控制与游标"
+                            ],
+                        },
+                    ],
+                },
                 {
                     text: "Redis",
                     prefix: "redis/",

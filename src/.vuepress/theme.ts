@@ -9,7 +9,7 @@ export default hopeTheme({
     name: "柒加壹",
   },
 
-  iconAssets: "//at.alicdn.com/t/c/font_3372836_3ffc06unhmv.css",
+  iconAssets: "//at.alicdn.com/t/c/font_3372836_3tyowx4kard.css",
 
   logo: "/logo.png",
 
