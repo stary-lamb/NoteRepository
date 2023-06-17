@@ -41,7 +41,7 @@ SELECT department_id, location_id
 FROM   departments;
 ```
 
-![image-20230615223317565](C:\Users\Mr.chen\AppData\Roaming\Typora\typora-user-images\image-20230615223317565.png)
+![](https://qijiayi-image.oss-cn-shenzhen.aliyuncs.com/img/202306160935254.png)
 
 > MySQL中的SQL语句是不区分大小写的，因此SELECT和select的作用是相同的，但是，许多开发人员习惯将关键字大写、数据列和表名小写，读者也应该养成一个良好的编程习惯，这样写出来的代码更容易阅读和维护。
 
