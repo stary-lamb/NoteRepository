@@ -7,7 +7,7 @@ export default defineUserConfig({
   locales: {
     "/": {
       lang: "zh-CN",
-      title: "",
+      title: "小柒BUG基地",
       description: "学习笔记&个人总结",
     },
   },

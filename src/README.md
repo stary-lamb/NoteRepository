@@ -2,10 +2,10 @@
 
 home: true
 icon: home
-title: 种植基地
+title: BUG基地
 heroImage: /logo.png
-heroText: 小柒种植基地
-tagline: 立志成为新时代优秀的 🧑‍🌾，记录每天的耕种日记
+heroText: BUG基地
+tagline: 这个基地泰酷辣，🐛🐛🐛
 actions:
 
 - text: 进入基地
@@ -46,7 +46,7 @@ features:
   
 - title: 项目总结
   icon: blog
-  details: 项目自我复盘与总结
+  details: 项目复盘与总结
   link: '/project'
 
 copyright: false
