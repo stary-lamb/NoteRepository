@@ -7,7 +7,7 @@ export default defineUserConfig({
   locales: {
     "/": {
       lang: "zh-CN",
-      title: "小柒BUG基地",
+      title: "Java学习之路",
       description: "学习笔记&个人总结",
     },
   },
