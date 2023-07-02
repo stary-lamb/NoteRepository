@@ -144,6 +144,20 @@ export default sidebar({
                         "多级缓存"
                     ],
                 },
+                {
+                    text: "Elasticsearch",
+                    prefix: "Elasticsearch/",
+                    icon: "Elasticsearch",
+                    collapsible: true,
+                    children: [
+                        "ES基本介绍",
+                        "ES索引&文档管理",
+                        "ES查询文档",
+                        "ES聚合查询",
+                        "ES优化",
+                        "ES集群"
+                    ],
+                },
             ],
         },
         {
