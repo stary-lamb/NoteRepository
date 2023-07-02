@@ -145,6 +145,17 @@ export default sidebar({
                     ],
                 },
                 {
+                    text: "MongoDB",
+                    prefix: "MongoDB/",
+                    icon: "mongodb",
+                    collapsible: true,
+                    children: [
+                        "MongoDB基本介绍",
+                        "MongoDBCRUD",
+                        "MongoDB索引",
+                    ],
+                },
+                {
                     text: "Elasticsearch",
                     prefix: "Elasticsearch/",
                     icon: "Elasticsearch",
