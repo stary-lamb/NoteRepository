@@ -1,36 +1,34 @@
 ---
 title: Docker 安装常用环境
-
 date: 2022-11-14
 ---
 
-## Docker 安装 MySQL 8.0
+## MySQL5.7
 
-**1. 拉取镜像**
+### 1. 拉取镜像
 
 ```shell
 docker pull mysql:5.7
 ```
 
-**2. 启动 mysql**
+### 2. 创建容器
+
+- 创建映射文件夹
+
+~~~ shell
+mkdir -p /mydata/mysql/log
+mkdir -p /mydata/mysql/data
+mkdir -p /mydata/mysql/conf
+~~~
+
+- 创建 MySQL 容器
 
 ```java
 docker run -p 3306:3306 --name mysql \
+--restart=alway \    
 -v /mydata/mysql/log:/var/log/mysql \
 -v /mydata/mysql/data:/var/lib/mysql \
 -v /mydata/mysql/conf:/etc/mysql \
--e MYSQL_ROOT_PASSWORD=root \
--d mysql:5.7
-
-docker run -p 3308:3306 --name mysql \
--e MYSQL_ROOT_PASSWORD=root \
--d mysql:5.7
-
-
-docker run -p 3308:3306 --name mysql3308 \
--v /mydata/mysql3308/log:/var/log/mysql \
--v /mydata/mysql3308/data:/var/lib/mysql \
--v /mydata/mysql3308/conf:/etc/mysql \
 -e MYSQL_ROOT_PASSWORD=root \
 -d mysql:5.7
 ```
@@ -46,11 +44,18 @@ docker run -p 3308:3306 --name mysql3308 \
 >
 > PS：直接进行目录挂载可能会出现报错，现在/mydata/mysql/conf 中创建 my.cnf 文件
 
-**3. 新建 mysql 配置文件**
+### 3. 新建 mysql 配置文件
+
+- 创建 my.cnf 文件
+
+~~~ shell
+vim /mydata/mysql/conf/my.cnf
+~~~
+
+- 写入mysql相关配置信息
 
 ```shell
-vim /mydata/mysql/conf/my.cnf
-----------------------------------------
+
 [client]
 
 default-character-set=utf8mb4
@@ -74,7 +79,7 @@ secure_file_priv=/var/lib/mysql
 
 ```
 
-**4. 修改权限**
+### 4. 修改权限
 
 ```shell
 // 进入mysql容器：
@@ -87,43 +92,45 @@ ALTER USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY 'root';
 flush privileges;
 ```
 
-**5. mysql 自启动**
+### 5. mysql 自启动
 
 ```shell
 docker update mysql --restart=always
-docker update redis --restart=always
 ```
 
-## Docker 安装 Redis
+> 如果创建容器时，指定自启动就不用执行上述命令
 
-**1. 拉取镜像**
+## Redis
+
+### 1. 拉取镜像
 
 ```shell
 docker pull redis
 ```
 
-**2. 启动 Redis**
+### 2. 创建容器
 
-（1）创建相应的文件夹
+- 创建映射文件夹
 
 ```shell
 // 创建配置文件
 mkdir -p /mydata/redis/conf
-touch /mydata/redis/conf/redis.conf
+touch /mydata/redis/conf/redis.conf启动 Redis
 ```
 
-(2) 启动 Redis
+- 创建 Redis 容器
 
 ```shell
 docker run -p 6379:6379 --name redis \
+--restart=alway \
 -v /mydata/redis/data:/data \
 -v /mydata/redis/conf/redis.conf:/etc/redis/redis.conf \
 -d redis redis-server /etc/redis/redis.conf
 ```
 
-**3. 修改配置文件**
+### 3. 修改配置文件
 
-```shell
+```properties
 # Redis configuration file example.
 #
 # Note that in order to read the configuration file, Redis must be
@@ -1959,21 +1966,23 @@ jemalloc-bg-thread yes
 
 ```
 
-**4. 修改为自启动**
+### 4. 修改为自启动
 
 ```shell
 docker update redis --restart=always
 ```
 
-## Docker 安装 mongoDB
+> 如果创建容器时，指定自启动就不用执行上述命令
 
-**1. 拉取镜像**
+## MongoDB
+
+### 1. 拉取镜像
 
 ```shell
 docker pull mongo
 ```
 
-**2. 启动 mongoDB**
+### 2. 创建容器
 
 ```shell
 docker run \
@@ -1986,7 +1995,7 @@ docker run \
 mongo
 ```
 
-**3. 给 mongo 设置账号和密码**
+### 3. 给 mongo 设置账号和密码
 
 ```shell
 #进入mogoDB
@@ -1996,3 +2005,154 @@ db.createUser({ user: 'root', pwd: '123456', roles: [ { role: "userAdminAnyDatab
 #y
 db.auth("root",123456)
 ```
+
+## RabbitMQ
+
+### 1. 拉取镜像
+
+~~~~ shell
+docker pull rabbitmq:management
+~~~~
+
+### 2. 创建容器
+
+- 创建映射文件夹
+
+~~~ shell
+mkdir -p /mydata/rabbitmq/data
+~~~
+
+- 创建 RabbitMQ 容器
+
+~~~ shell
+docker run -p 15672:15672 -p 5672:5672 --name rabbitmq \
+--restart=alway \
+-v /home/rabbitmq/data:/data \
+-e RABBITMQ_DEFAULT_USER=admin \
+-e RABBITMQ_DEFAULT_PASS=123456 \
+-d rabbitmq:management
+~~~
+
+>  --name：指定容器名称
+>  -d：后台运行
+>  -p：将 mq 端口号映射到本地
+>  -v：将/home/rabbitmq/data挂载到容器中的/data目录
+>  -e RABBITMQ_DEFAULT_USER=ping：设置用户名为 admin
+>  -e RABBITMQ_DEFAULT_PASS=123456：设置密码为 123456
+
+## ElasticSearch
+
+### 1. 拉取镜像
+
+~~~~ shell
+docker pull elasticsearch:7.12.0
+~~~~
+
+### 2. 创建容器
+
+- 创建映射文件夹
+
+~~~ shell
+mkdir -p /mydata/elasticsearch/config
+mkdir -p /mydata/elasticsearch/data
+mkdir -p /mydata/elasticsearch/plugins
+~~~
+
+- 写入配置文件
+
+~~~ shell
+echo "http.host: 0.0.0.0" >> /mydata/elasticsearch/config/elasticsearch.yml
+~~~
+
+- 创建容器
+
+~~~ shell
+sudo docker run --name elasticsearch -p 9200:9200  -p 9300:9300 \
+--restart=alway \
+-e "discovery.type=single-node" \
+-e ES_JAVA_OPTS="-Xms84m -Xmx512m" \
+-v /mydata/elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml \
+-v /mydata/elasticsearch/data:/usr/share/elasticsearch/data \
+-v /mydata/elasticsearch/plugins:/usr/share/elasticsearch/plugins \
+-d elasticsearch:7.12.0
+~~~
+
+> **说明:**
+>
+> - -p 端口映射
+> - -e discovery.type=single-node 单点模式启动
+> - -e ES_JAVA_OPTS=“-Xms84m -Xmx512m”：设置启动占用的内存范围
+> - -v 目录挂载
+> - -d 后台运行
+
+### 3. 配置IK分词器
+
+#### 下载IK分词器
+
+- 下载地址：https://github.com/medcl/elasticsearch-analysis-ik/releases
+
+  >  ik分词器的版本需要和es的版本一致
+
+- 创建`ik`文件夹，把下载的压缩包上传到服务器ik文件夹中，解压压缩包
+
+~~~ shell
+mkdir /opt/ik
+unzip -d /opt/ik/ elasticsearch-analysis-ik-7.12.0.zip
+~~~
+
+#### 将ik转移到docker容器内部
+
+将解压好的ik分词器插件复制到docker容器当中。
+
+~~~~ shell
+docker cp /opt/ik/ elasticsearch:/usr/share/elasticsearch/plugins
+~~~~
+
+#### 重新启动容器
+
+~~~ shell
+docker restart elasticsearch
+~~~
+
+## Kibana
+
+### 1. 拉取镜像
+
+~~~ shell
+docker pull kibana:7.12.0
+~~~
+
+> 说明：拉取 kibana 镜像的版本要与 elasticsearch 的版本一致
+
+### 2. 创建容器
+
+- 创建映射文件夹
+
+~~~ shell
+mkdir -p /mydata/kibana/config
+mkdir -p /mydata/kibana/data
+mkdir -p /mydata/kibana/plugins
+~~~
+
+- 在config目录下创建`kibana.yml` 配置如下
+
+~~~ yaml
+# Default Kibana configuration for docker target
+server.name: kibana
+server.host: "0"
+# 需要连接的地址
+elasticsearch.hosts: [ "http://写入你的ES配置地址:9200" ]
+xpack.monitoring.ui.container.elasticsearch.enabled: true
+~~~
+
+- 创建容器
+
+~~~ shell
+docker run -d --network es-net --privileged=true \
+--name kibana -p 5601:5601 \
+-v /mydata/kibana/config/kibana.yml:/usr/share/kibana/config/kibana.yml \
+-v /mydata/kibana/data:/usr/share/kibana/data \
+-v /mydata/kibana/plugins:/usr/share/kibana/plugins \
+kibana:7.12.0
+~~~
+
