@@ -217,7 +217,7 @@ java.lang.OutOfMemoryError: Java heap space
 
 ##### MAT分析
 
- 使用MAT工具查看，能找到对应的线程及相应线程中对应实例的位置和代码：
+使用MAT工具查看，能找到对应的线程及相应线程中对应实例的位置和代码：j
 
 ![image-20230707161959064](https://qijiayi-image.oss-cn-shenzhen.aliyuncs.com/img/202307071619135.png)
 
@@ -869,7 +869,7 @@ public class SynchronizedTest {
 
 ##### 代码优化三：标量替换
 
-**标量（Scalar）**是指一个无法再分解成更小的数据的数据。Java中的原始数据类型就是标量。
+**标量（Scalar）** 是指一个无法再分解成更小的数据的数据。Java中的原始数据类型就是标量。
 
 相对的，那些还可以分解的数据叫做**聚合量（Aggregate）**，Java中的对象就是聚合量，因为他可以分解成其他聚合量和标量。
 
