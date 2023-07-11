@@ -54,14 +54,14 @@ ReentrantReadWriteLock 可以看成是组合式，因为ReentrantReadWriteLock�
 
 ### 与 AQS 有关的
 
-![image-20230610153250492](https://qijiayi-image.oss-cn-shenzhen.aliyuncs.com/img/202306101532603.png)
+![image-20230711113723302](https://qijiayi-image.oss-cn-shenzhen.aliyuncs.com/img/202307111137439.png)
 
-### 锁 与 AQS 的关系
+### 锁 与 AQS 的关系·
 
 - 锁：面向锁的使用者，定义了程序员和锁交互的使用层API，隐藏了实现细节，你调用即可。
 - 同步器：面向锁的实现者，比如Java并发大神DougLee，提出统一规范并简化了锁的实现，屏蔽了同步状态管理、阻塞线程排队和通知、唤醒机制等。
 
-## AbstractQueuedSynchronizer数据结构
+## AQS数据结构
 
 AbstractQueuedSynchronizer类底层的数据结构是使用`CLH(Craig,Landin,and Hagersten)队列`是一个虚拟的双向队列(虚拟的双向队列即不存在队列实例，仅存在结点之间的关联关系)。
 
@@ -69,7 +69,7 @@ AQS是将每条请求共享资源的线程封装成一个CLH锁队列的一个�
 
 ![image](https://qijiayi-image.oss-cn-shenzhen.aliyuncs.com/img/202306101544543.png)
 
-## AbstractQueuedSynchronizer源码分析
+## AQS源码分析
 
 ![image-20230610154531761](https://qijiayi-image.oss-cn-shenzhen.aliyuncs.com/img/202306101545811.png)
 
@@ -1023,7 +1023,7 @@ public final boolean release(int arg) {
 
 对于其他方法我们也可以分析，与前面分析的方法大同小异，所以，不再累赘。
 
-## AbstractQueuedSynchronizer示例详解一
+## AQS示例详解一
 
 借助下面示例来分析AbstractQueuedSyncrhonizer内部的工作机制。示例源码如下
 
@@ -1100,7 +1100,7 @@ Thread[t2,5,main] running
 
 说明: t2线程执行lock.unlock后，最终达到的状态还是与之前的状态一样。
 
-## AbstractQueuedSynchronizer示例详解二
+## AQS示例详解二
 
 下面我们结合Condition实现生产者与消费者，来进一步分析AbstractQueuedSynchronizer的内部工作机制。
 
@@ -1319,7 +1319,7 @@ consume = 200, size = 0
 - c2线程继续运行，执行fullCondition. signal，由于此时fullCondition的condition queue已经不存在任何结点了，故其不会产生作用。
 - c2执行lock.unlock，由于c2是sync队列中最后一个结点，故其不会再调用unparkSuccessor了，直接返回true。即整个流程就完成了。
 
-## AbstractQueuedSynchronizer总结
+## AQS总结
 
 对于AbstractQueuedSynchronizer的分析，最核心的就是sync queue的分析。
 
