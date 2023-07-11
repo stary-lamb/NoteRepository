@@ -315,12 +315,14 @@ public class DateUtils {
 
 ### 为什么会出现内存泄漏
 
-`ThreadLocalMap`从字面上就可以看出这是一个保存`ThreadLocal`对象的map(其实是以它为Key)，不过是经过了两层包装的`ThreadLocal`对象：
+`ThreadLocalMap`从字面上就可以看出这是一个保存`ThreadLocal`对象的 map(其实是以ThreadLocal为Key)，只不过是经过了两层包装的`ThreadLocal`对象：
 
 1. 第一层包装是使用 WeakReference<ThreadLocal<?>> 将ThreadLocal对象变成一个弱引用的对象；
 2. 第二层包装是定义了一个专门的类 Entry 来扩展 WeakReference<ThreadLocal<?>>
 
 ![image-20230505224857538[]](https://qijiayi-image.oss-cn-shenzhen.aliyuncs.com/img/202306101451531.png)
+
+![image-20230711162037280](https://qijiayi-image.oss-cn-shenzhen.aliyuncs.com/img/202307111620547.png)
 
 > PS：在使用ThreadLocal的时候，强烈建议：**务必手动remove**
 
