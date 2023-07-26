@@ -245,7 +245,7 @@ public class SpinLockDemo
 
 ![image-20230610075541447](https://qijiayi-image.oss-cn-shenzhen.aliyuncs.com/img/202306100755493.png)
 
-如果CAS失败，会一直进行尝试。如果CAS长时间一直不成功，可能会给CPU带来很大的开销。
+如果CAS失败，会一直进行重试。如果CAS长时间一直不成功，可能会给CPU带来很大的开销。
 
 ### ABA 问题
 
