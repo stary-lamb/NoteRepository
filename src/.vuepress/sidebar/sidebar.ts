@@ -122,6 +122,7 @@ export default sidebar({
                         "锁",
                         "事务",
                         "日志",
+                        "explain",
                         "主从复制"
                     ],
                 },
