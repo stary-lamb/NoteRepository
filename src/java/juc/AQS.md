@@ -1,6 +1,6 @@
 ---
 title: AbstractQueuedSynchronizer
-date: 2023-6-10
+date: 2023-06-10
 ---
 
 ## AQS基本介绍

@@ -43,7 +43,7 @@ Elasticsearch中集群节点有不同的职责划分：
 
 当网络恢复后，因为集群中有两个master节点，集群状态的不一致，出现脑裂的情况：
 
-![image-20210723224000555](F:\课程视频&资料\ElasticSearch\黑马es资料\day03\assets\image-20210723224000555.png)
+![image-20210723224000555](https://qijiayi-image.oss-cn-shenzhen.aliyuncs.com/img/202307311148205.png)
 
 
 
