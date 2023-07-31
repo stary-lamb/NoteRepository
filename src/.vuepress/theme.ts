@@ -1,3 +1,4 @@
+// @ts-ignore
 import { hopeTheme } from "vuepress-theme-hope";
 import { navbarConfig } from "./navbar.js";
 import sidebar from "./sidebar/sidebar";
@@ -16,7 +17,6 @@ export default hopeTheme({
   repo: "https://github.com/stary-lamb/NoteRepository",
 
   docsDir: "docs",
-
   pageInfo: [
     "Author",
     "Category",
