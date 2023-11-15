@@ -38,7 +38,7 @@ export default sidebar({
                     children: [
                         "JUC思维导图",
                         "多线程基础",
-                        "FutureTask & CompletableFuture",
+                        "FutureTaskAndCompletableFuture",
                         "Java内存模型-JMM",
                         "volatile",
                         "CAS",
